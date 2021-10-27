@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Factura2021_1400.Vistas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
@@ -15,7 +16,7 @@ namespace Factura2021_1400
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new LoginView());
         }
     }
 }
