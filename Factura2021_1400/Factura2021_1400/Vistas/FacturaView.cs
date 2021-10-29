@@ -7,18 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Factura2021_1400.Controladores;
 
 namespace Factura2021_1400.Vistas
 {
-    public partial class UsuariosView : Form
+    public partial class FacturaView : Form
     {
-        public UsuariosView()
+        public FacturaView()
         {
             InitializeComponent();
-            UsuariosController controller = new UsuariosController(this);
         }
 
-        
+       
     }
 }

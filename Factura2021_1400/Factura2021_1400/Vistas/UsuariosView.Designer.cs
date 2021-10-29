@@ -29,6 +29,7 @@ namespace Factura2021_1400.Vistas
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,7 +46,9 @@ namespace Factura2021_1400.Vistas
             this.Modificarbutton = new System.Windows.Forms.Button();
             this.Eliminarbutton = new System.Windows.Forms.Button();
             this.Cancelarbutton = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -108,6 +111,7 @@ namespace Factura2021_1400.Vistas
             // 
             // NombreTextBox
             // 
+            this.NombreTextBox.Enabled = false;
             this.NombreTextBox.Location = new System.Drawing.Point(163, 63);
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(190, 26);
@@ -115,6 +119,7 @@ namespace Factura2021_1400.Vistas
             // 
             // EmailTextBox
             // 
+            this.EmailTextBox.Enabled = false;
             this.EmailTextBox.Location = new System.Drawing.Point(163, 120);
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.Size = new System.Drawing.Size(190, 26);
@@ -122,6 +127,7 @@ namespace Factura2021_1400.Vistas
             // 
             // ClaveTextBox
             // 
+            this.ClaveTextBox.Enabled = false;
             this.ClaveTextBox.Location = new System.Drawing.Point(163, 177);
             this.ClaveTextBox.Name = "ClaveTextBox";
             this.ClaveTextBox.Size = new System.Drawing.Size(190, 26);
@@ -130,6 +136,7 @@ namespace Factura2021_1400.Vistas
             // EsAdminCheckBox
             // 
             this.EsAdminCheckBox.AutoSize = true;
+            this.EsAdminCheckBox.Enabled = false;
             this.EsAdminCheckBox.Location = new System.Drawing.Point(163, 241);
             this.EsAdminCheckBox.Name = "EsAdminCheckBox";
             this.EsAdminCheckBox.Size = new System.Drawing.Size(15, 14);
@@ -157,6 +164,7 @@ namespace Factura2021_1400.Vistas
             // 
             // Guardarbutton
             // 
+            this.Guardarbutton.Enabled = false;
             this.Guardarbutton.Location = new System.Drawing.Point(356, 315);
             this.Guardarbutton.Name = "Guardarbutton";
             this.Guardarbutton.Size = new System.Drawing.Size(166, 31);
@@ -184,12 +192,17 @@ namespace Factura2021_1400.Vistas
             // 
             // Cancelarbutton
             // 
+            this.Cancelarbutton.Enabled = false;
             this.Cancelarbutton.Location = new System.Drawing.Point(700, 315);
             this.Cancelarbutton.Name = "Cancelarbutton";
             this.Cancelarbutton.Size = new System.Drawing.Size(166, 31);
             this.Cancelarbutton.TabIndex = 16;
             this.Cancelarbutton.Text = "Cancelar";
             this.Cancelarbutton.UseVisualStyleBackColor = true;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // UsuariosView
             // 
@@ -217,6 +230,7 @@ namespace Factura2021_1400.Vistas
             this.Name = "UsuariosView";
             this.Text = "UsuariosView";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,21 +238,22 @@ namespace Factura2021_1400.Vistas
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox IdTextBox;
-        private System.Windows.Forms.TextBox NombreTextBox;
-        private System.Windows.Forms.TextBox EmailTextBox;
-        private System.Windows.Forms.TextBox ClaveTextBox;
-        private System.Windows.Forms.CheckBox EsAdminCheckBox;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button Nuevobutton;
-        private System.Windows.Forms.Button Guardarbutton;
-        private System.Windows.Forms.Button Modificarbutton;
-        private System.Windows.Forms.Button Eliminarbutton;
-        private System.Windows.Forms.Button Cancelarbutton;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.TextBox IdTextBox;
+        public System.Windows.Forms.TextBox NombreTextBox;
+        public System.Windows.Forms.TextBox EmailTextBox;
+        public System.Windows.Forms.TextBox ClaveTextBox;
+        public System.Windows.Forms.CheckBox EsAdminCheckBox;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.Button Nuevobutton;
+        public System.Windows.Forms.Button Guardarbutton;
+        public System.Windows.Forms.Button Modificarbutton;
+        public System.Windows.Forms.Button Eliminarbutton;
+        public System.Windows.Forms.Button Cancelarbutton;
+        public System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

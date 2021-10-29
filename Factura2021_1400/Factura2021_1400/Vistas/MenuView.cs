@@ -15,14 +15,10 @@ namespace Factura2021_1400.Vistas
             InitializeComponent();
         }
 
-        private void MenuView_Load(object sender, EventArgs e)
+        private void UsuariosToolStripButton_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void ribbonControlAdv1_Click(object sender, EventArgs e)
-        {
-
+            UsuariosView vista = new UsuariosView();
+            vista.Show();
         }
     }
 }

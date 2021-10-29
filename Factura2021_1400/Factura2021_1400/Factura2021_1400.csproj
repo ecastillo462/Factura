@@ -51,11 +51,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controladores\LoginController.cs" />
+    <Compile Include="Controladores\UsuariosController.cs" />
     <Compile Include="Modelos\DAO\Conexion.cs" />
     <Compile Include="Modelos\DAO\UsuarioDAO.cs" />
     <Compile Include="Modelos\Entidades\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vistas\ClientesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ClientesView.Designer.cs">
+      <DependentUpon>ClientesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FacturaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FacturaView.Designer.cs">
+      <DependentUpon>FacturaView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\LoginView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +80,18 @@
     </Compile>
     <Compile Include="Vistas\MenuView.Designer.cs">
       <DependentUpon>MenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ProductosView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ProductosView.Designer.cs">
+      <DependentUpon>ProductosView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\TipoProductosView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\TipoProductosView.Designer.cs">
+      <DependentUpon>TipoProductosView.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\UsuariosView.cs">
       <SubType>Form</SubType>
@@ -84,11 +109,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vistas\ClientesView.resx">
+      <DependentUpon>ClientesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FacturaView.resx">
+      <DependentUpon>FacturaView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\MenuView.resx">
       <DependentUpon>MenuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ProductosView.resx">
+      <DependentUpon>ProductosView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\TipoProductosView.resx">
+      <DependentUpon>TipoProductosView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\UsuariosView.resx">
       <DependentUpon>UsuariosView.cs</DependentUpon>
