@@ -40,14 +40,14 @@ namespace Factura2021_1400.Vistas
             this.EmailTextBox = new System.Windows.Forms.TextBox();
             this.ClaveTextBox = new System.Windows.Forms.TextBox();
             this.EsAdminCheckBox = new System.Windows.Forms.CheckBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.UsuariosdataGridView = new System.Windows.Forms.DataGridView();
             this.Nuevobutton = new System.Windows.Forms.Button();
             this.Guardarbutton = new System.Windows.Forms.Button();
             this.Modificarbutton = new System.Windows.Forms.Button();
             this.Eliminarbutton = new System.Windows.Forms.Button();
             this.Cancelarbutton = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UsuariosdataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -143,15 +143,16 @@ namespace Factura2021_1400.Vistas
             this.EsAdminCheckBox.TabIndex = 10;
             this.EsAdminCheckBox.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // UsuariosdataGridView
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.UsuariosdataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 413);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1021, 150);
-            this.dataGridView1.TabIndex = 11;
+            this.UsuariosdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.UsuariosdataGridView.Location = new System.Drawing.Point(12, 413);
+            this.UsuariosdataGridView.Name = "UsuariosdataGridView";
+            this.UsuariosdataGridView.Size = new System.Drawing.Size(1021, 150);
+            this.UsuariosdataGridView.TabIndex = 11;
             // 
             // Nuevobutton
             // 
@@ -214,7 +215,7 @@ namespace Factura2021_1400.Vistas
             this.Controls.Add(this.Modificarbutton);
             this.Controls.Add(this.Guardarbutton);
             this.Controls.Add(this.Nuevobutton);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.UsuariosdataGridView);
             this.Controls.Add(this.EsAdminCheckBox);
             this.Controls.Add(this.ClaveTextBox);
             this.Controls.Add(this.EmailTextBox);
@@ -229,7 +230,7 @@ namespace Factura2021_1400.Vistas
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UsuariosView";
             this.Text = "UsuariosView";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UsuariosdataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -248,7 +249,7 @@ namespace Factura2021_1400.Vistas
         public System.Windows.Forms.TextBox EmailTextBox;
         public System.Windows.Forms.TextBox ClaveTextBox;
         public System.Windows.Forms.CheckBox EsAdminCheckBox;
-        public System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.DataGridView UsuariosdataGridView;
         public System.Windows.Forms.Button Nuevobutton;
         public System.Windows.Forms.Button Guardarbutton;
         public System.Windows.Forms.Button Modificarbutton;

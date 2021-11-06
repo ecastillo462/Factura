@@ -64,6 +64,7 @@ namespace Factura2021_1400.Vistas
             this.ContraseniaTextBox.PasswordChar = '*';
             this.ContraseniaTextBox.Size = new System.Drawing.Size(240, 20);
             this.ContraseniaTextBox.TabIndex = 2;
+            this.ContraseniaTextBox.Text = "1234";
             // 
             // EmailTextBox
             // 
@@ -71,6 +72,7 @@ namespace Factura2021_1400.Vistas
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.Size = new System.Drawing.Size(240, 20);
             this.EmailTextBox.TabIndex = 3;
+            this.EmailTextBox.Text = "ecastillo@unah.hn";
             // 
             // AceptarButton
             // 

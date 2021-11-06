@@ -209,7 +209,7 @@ namespace Factura2021_1400.Vistas
             this.toolStripEx6.Office12Mode = false;
             this.toolStripEx6.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripEx6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripEx6.Size = new System.Drawing.Size(198, 66);
+            this.toolStripEx6.Size = new System.Drawing.Size(39, 66);
             this.toolStripEx6.TabIndex = 0;
             // 
             // toolStripButton2
@@ -218,7 +218,7 @@ namespace Factura2021_1400.Vistas
             this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(95, 49);
+            this.toolStripButton2.Size = new System.Drawing.Size(95, 63);
             this.toolStripButton2.Text = "Productos";
             // 
             // toolStripTabItem2

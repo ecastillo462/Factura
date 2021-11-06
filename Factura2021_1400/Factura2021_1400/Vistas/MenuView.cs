@@ -18,6 +18,7 @@ namespace Factura2021_1400.Vistas
         private void UsuariosToolStripButton_Click(object sender, EventArgs e)
         {
             UsuariosView vista = new UsuariosView();
+            vista.MdiParent = this;
             vista.Show();
         }
     }
