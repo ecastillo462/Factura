@@ -118,13 +118,12 @@ namespace Factura2021_1400.Modelos.DAO
                 MiConexion.Close();
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return modifico;
             }
             return modifico;
         }
-
         public bool EliminarUsuario(int Id)
         {
             try

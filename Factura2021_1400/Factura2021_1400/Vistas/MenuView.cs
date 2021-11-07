@@ -14,12 +14,25 @@ namespace Factura2021_1400.Vistas
         {
             InitializeComponent();
         }
-
+        UsuariosView vistaUsuarios;
         private void UsuariosToolStripButton_Click(object sender, EventArgs e)
         {
-            UsuariosView vista = new UsuariosView();
-            vista.MdiParent = this;
-            vista.Show();
+            if (vistaUsuarios == null)
+            {
+                vistaUsuarios = new UsuariosView();
+                vistaUsuarios.MdiParent = this;
+                vistaUsuarios.FormClosed += Vista_FormClosed;
+                vistaUsuarios.Show();
+            }
+            else
+            {
+                vistaUsuarios.Activate();
+            }           
+        }
+
+        private void Vista_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            vistaUsuarios = null;
         }
     }
 }

@@ -29,17 +29,18 @@ namespace Factura2021_1400.Vistas
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.IdentidadMaskedtextBox = new System.Windows.Forms.TextBox();
+            this.EmailtextBox = new System.Windows.Forms.TextBox();
+            this.NombretextBox = new System.Windows.Forms.TextBox();
+            this.IdtextBox = new System.Windows.Forms.TextBox();
+            this.DirecciontextBox = new System.Windows.Forms.TextBox();
+            this.Imagenbutton = new System.Windows.Forms.Button();
             this.Cancelarbutton = new System.Windows.Forms.Button();
             this.Eliminarbutton = new System.Windows.Forms.Button();
             this.Modificarbutton = new System.Windows.Forms.Button();
@@ -47,8 +48,10 @@ namespace Factura2021_1400.Vistas
             this.Nuevobutton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -96,50 +99,51 @@ namespace Factura2021_1400.Vistas
             this.label5.TabIndex = 4;
             this.label5.Text = "Direccion:";
             // 
-            // textBox1
+            // IdentidadMaskedtextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(98, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(243, 26);
-            this.textBox1.TabIndex = 5;
+            this.IdentidadMaskedtextBox.Location = new System.Drawing.Point(98, 68);
+            this.IdentidadMaskedtextBox.Name = "IdentidadMaskedtextBox";
+            this.IdentidadMaskedtextBox.Size = new System.Drawing.Size(243, 26);
+            this.IdentidadMaskedtextBox.TabIndex = 5;
             // 
-            // textBox2
+            // EmailtextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(98, 192);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(243, 26);
-            this.textBox2.TabIndex = 6;
+            this.EmailtextBox.Location = new System.Drawing.Point(98, 192);
+            this.EmailtextBox.Name = "EmailtextBox";
+            this.EmailtextBox.Size = new System.Drawing.Size(243, 26);
+            this.EmailtextBox.TabIndex = 6;
             // 
-            // textBox3
+            // NombretextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(98, 130);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(243, 26);
-            this.textBox3.TabIndex = 7;
+            this.NombretextBox.Location = new System.Drawing.Point(98, 130);
+            this.NombretextBox.Name = "NombretextBox";
+            this.NombretextBox.Size = new System.Drawing.Size(243, 26);
+            this.NombretextBox.TabIndex = 7;
             // 
-            // textBox4
+            // IdtextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(98, 6);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(243, 26);
-            this.textBox4.TabIndex = 8;
+            this.IdtextBox.Location = new System.Drawing.Point(98, 6);
+            this.IdtextBox.Name = "IdtextBox";
+            this.IdtextBox.ReadOnly = true;
+            this.IdtextBox.Size = new System.Drawing.Size(243, 26);
+            this.IdtextBox.TabIndex = 8;
             // 
-            // textBox5
+            // DirecciontextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(97, 254);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(243, 26);
-            this.textBox5.TabIndex = 9;
+            this.DirecciontextBox.Location = new System.Drawing.Point(97, 254);
+            this.DirecciontextBox.Name = "DirecciontextBox";
+            this.DirecciontextBox.Size = new System.Drawing.Size(243, 26);
+            this.DirecciontextBox.TabIndex = 9;
             // 
-            // button1
+            // Imagenbutton
             // 
-            this.button1.Location = new System.Drawing.Point(504, 286);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 30);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Imagen ...";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Imagenbutton.Enabled = false;
+            this.Imagenbutton.Location = new System.Drawing.Point(504, 286);
+            this.Imagenbutton.Name = "Imagenbutton";
+            this.Imagenbutton.Size = new System.Drawing.Size(75, 30);
+            this.Imagenbutton.TabIndex = 11;
+            this.Imagenbutton.Text = "Imagen ...";
+            this.Imagenbutton.UseVisualStyleBackColor = true;
             // 
             // Cancelarbutton
             // 
@@ -205,6 +209,10 @@ namespace Factura2021_1400.Vistas
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // ClientesView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -216,13 +224,13 @@ namespace Factura2021_1400.Vistas
             this.Controls.Add(this.Modificarbutton);
             this.Controls.Add(this.Guardarbutton);
             this.Controls.Add(this.Nuevobutton);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Imagenbutton);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.DirecciontextBox);
+            this.Controls.Add(this.IdtextBox);
+            this.Controls.Add(this.NombretextBox);
+            this.Controls.Add(this.EmailtextBox);
+            this.Controls.Add(this.IdentidadMaskedtextBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -234,6 +242,7 @@ namespace Factura2021_1400.Vistas
             this.Text = "ClientesView";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,18 +255,19 @@ namespace Factura2021_1400.Vistas
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button Cancelarbutton;
-        private System.Windows.Forms.Button Eliminarbutton;
-        private System.Windows.Forms.Button Modificarbutton;
-        private System.Windows.Forms.Button Guardarbutton;
-        private System.Windows.Forms.Button Nuevobutton;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.TextBox IdentidadMaskedtextBox;
+        public System.Windows.Forms.TextBox EmailtextBox;
+        public System.Windows.Forms.TextBox NombretextBox;
+        public System.Windows.Forms.TextBox IdtextBox;
+        public System.Windows.Forms.TextBox DirecciontextBox;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Button Imagenbutton;
+        public System.Windows.Forms.Button Cancelarbutton;
+        public System.Windows.Forms.Button Eliminarbutton;
+        public System.Windows.Forms.Button Modificarbutton;
+        public System.Windows.Forms.Button Guardarbutton;
+        public System.Windows.Forms.Button Nuevobutton;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

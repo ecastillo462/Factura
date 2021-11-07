@@ -29,6 +29,8 @@ namespace Factura2021_1400.Vistas
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuView));
             this.ribbonControlAdv1 = new Syncfusion.Windows.Forms.Tools.RibbonControlAdv();
             this.toolStripTabItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx4 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
@@ -45,6 +47,7 @@ namespace Factura2021_1400.Vistas
             this.toolStripEx3 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.UsuarioToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripEx1 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.tabbedMDIManager1 = new Syncfusion.Windows.Forms.Tools.TabbedMDIManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAdv1)).BeginInit();
             this.ribbonControlAdv1.SuspendLayout();
             this.toolStripTabItem1.Panel.SuspendLayout();
@@ -218,7 +221,7 @@ namespace Factura2021_1400.Vistas
             this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(95, 63);
+            this.toolStripButton2.Size = new System.Drawing.Size(95, 36);
             this.toolStripButton2.Text = "Productos";
             // 
             // toolStripTabItem2
@@ -309,12 +312,25 @@ namespace Factura2021_1400.Vistas
             this.toolStripEx1.Size = new System.Drawing.Size(126, 66);
             this.toolStripEx1.TabIndex = 0;
             // 
+            // tabbedMDIManager1
+            // 
+            this.tabbedMDIManager1.AttachedTo = this;
+            this.tabbedMDIManager1.CloseButtonBackColor = System.Drawing.Color.White;
+            this.tabbedMDIManager1.CloseButtonToolTip = "";
+            this.tabbedMDIManager1.DropDownButtonToolTip = "";
+            this.tabbedMDIManager1.ImageSize = new System.Drawing.Size(16, 16);
+            this.tabbedMDIManager1.NeedUpdateHostedForm = false;
+            this.tabbedMDIManager1.ShowCloseButton = true;
+            this.tabbedMDIManager1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016White);
+            this.tabbedMDIManager1.ThemeName = "TabRendererOffice2016White";
+            // 
             // MenuView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1032, 482);
             this.Controls.Add(this.ribbonControlAdv1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.IsMdiContainer = true;
             this.Name = "MenuView";
             this.Text = "MenuView";
@@ -357,5 +373,6 @@ namespace Factura2021_1400.Vistas
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem3;
         private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx5;
         private System.Windows.Forms.ToolStripButton ClienteToolStripButton;
+        private Syncfusion.Windows.Forms.Tools.TabbedMDIManager tabbedMDIManager1;
     }
 }

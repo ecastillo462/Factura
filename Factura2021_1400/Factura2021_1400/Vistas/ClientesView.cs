@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Factura2021_1400.Controladores;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace Factura2021_1400.Vistas
         public ClientesView()
         {
             InitializeComponent();
+            ClienteController controlador = new ClienteController(this);
         }
     }
 }
